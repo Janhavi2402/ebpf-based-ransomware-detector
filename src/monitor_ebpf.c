@@ -1,8 +1,11 @@
 // src/monitor_ebpf.c
+
 #include <uapi/linux/ptrace.h>
+
+//comment 
 #include <linux/sched.h>   // TASK_COMM_LEN
 
-struct data_t {
+struct data_t { 
     u32 pid;
     char comm[TASK_COMM_LEN];
     char filename[256];  // for openat/unlinkat; empty for write

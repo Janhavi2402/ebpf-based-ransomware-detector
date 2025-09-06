@@ -1,7 +1,8 @@
+#comment 
 import os, time
 
 folder = "../logs/test_files/"
-os.makedirs(folder, exist_ok=True)
+os.makedirs(folder, exist_ok=True) 
 
 for i in range(1, 21):
     with open(f"{folder}file_{i}.txt", "w") as f:
